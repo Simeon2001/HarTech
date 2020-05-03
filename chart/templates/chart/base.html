@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {% block title %}<title>Hartech homepage</title>{% endblock %}
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'chart/img/a.png' %}" rel="icon">
+  <link href="{% static 'chart/img/b.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'chart/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'chart/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'chart/lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'chart/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'chart/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'chart/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'chart/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'chart/css/special.css' %}" rel="stylesheet">
+  
+</head>
+<body>
+<!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1 class="har"><a href=" url 'Home' " class="scrollto ha">Har</a><span id="tech">Tech</span></h1>
+      </div>
+      
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href=" url 'Home' ">Home</a></li>
+          <li><a href=" url 'add'  ">NEWS</a></li>
+          <li><a href=" url 'ask'  ">BLOG</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <main id="main">
+      <div class="container">
+          <div class="con">
+            {% block content %}
+            {% endblock %}
+          
+    </main>
+  
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3 id="har">Har<span id="tech">Tech</span></span></h3>
+            <p>Your life sharing platform.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href=" url 'add' ">Add link</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href=" url 'ask'">Requests</a></li>
+              
+            </ul>
+          </div>
+          
+        <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Street 4 Atlanta  <br>
+              Akure, Ondo State<br>
+              Nigeria <br>
+              <strong>Phone:</strong> +234 8064 8185 79<br>
+              <strong>Email:</strong> iquentral@protonmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://mobile.facebook.com/jesusanya.simeon?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https:github.com/Simeon2001" class="github"><i class="fa fa-github"></i></a>
+              <a href="http://wa.me/2348064818579" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>HarTech</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">iquentral-devs</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  
+  <script src="{% static 'chart/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'chart/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'chart/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'chart/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'chart/lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'chart/lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'chart/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'chart/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'chart/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'chart/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'chart/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'chart/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'chart/lib/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'chart/contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'chart/js/main.js' %}"></script>
+</body>

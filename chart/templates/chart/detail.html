@@ -1,0 +1,31 @@
+{% extends 'chart/base.html' %}
+{% block content %}
+<div id="ga">
+    <h1>Special People</h1>
+</div>
+<div id="space">
+  <div class="card text-center">
+    <div class="card-header">
+    {{ab.title}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ab.name}}</h5>
+      <p class="card-text">{{ab.biography}}</p>
+      <div id="gid">
+        {% if ab.images %}
+        <img src="{{ab.images.url}}" alt="{{ab.title}}" />
+        {% endif %}
+        {% if ab.images1 %}
+        <img src="{{ab.images1.url}}" alt="{{ab.title}}" />
+        {% endif %}
+        {% if ab.images2 %}
+        <img src="{{ab.images2.url}}" alt="{{ab.title}}" />
+        {% endif %}
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+    {{ab.date_created}}
+    </div>
+  </div>
+</div>
+{% endblock %}

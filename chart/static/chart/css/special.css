@@ -1,0 +1,65 @@
+#har {
+    color: #18d36e;
+}
+
+#tech {
+    color: yellow;
+}
+#space {
+    margin-top: 30px;
+}
+#ga h1 {
+    color:rgba(247,214,214,0.823);
+    font-size: 25px;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+#title, #name, #date {
+    color: #f3f366;
+    font-size: 20px;
+    
+}
+
+#name {
+    margin-top: 15px;
+}
+
+
+#help a {
+    margin-top: 3px;
+}
+
+#button{
+  background: none;
+  border: 2px solid #FFC636;
+  color: #FFC636;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+  display: inline-block;
+}
+
+#button:hover{
+  color: green;
+  background: #FFC636;
+}
+
+#gid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px
+}
+
+#gid img {
+  height: 100px;
+  margin: 10px auto;
+}
+
+
+
+
+
+
+
